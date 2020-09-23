@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Average
+comment0.text=\n\ Write\ a\ description\ of\ class\ Average\ here.\n\n\ @author\ IoannisCh\n\ @version\ 1.0\n
+comment1.params=numbers
+comment1.target=double\ findSum(double[])
+comment2.params=numbers
+comment2.target=double\ computeAverage(double[])
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
