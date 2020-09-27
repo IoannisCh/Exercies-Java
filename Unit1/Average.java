@@ -26,7 +26,7 @@ public class Average {
       return sum/numbers.length;
     }
   }
-
+  
   public static void main (String[] args) {
 
     double[] numbers = {15, 32, 67, 44, 98};
@@ -35,5 +35,24 @@ public class Average {
 
     System.out.println ("The average of the numbers is: " + average);
   }
+  
+  public static void showArray (int[] numbers) {
+  System.out.print ("{");                           // <1>
 
+  for (int i = 0; i < numbers.length; i = i + 1) {  // <2>
+    System.out.print ("" + numbers[i] + ", ");      // <3>
+  }
+
+  System.out.println ("}");                         // <4>
+  }
+  
+  public static int[] doubleArray (int[] numbers) {   // <1>
+  int[] result = new int[numbers.length];           // <2>
+
+  for (int i = 0; i < numbers.length; i = i+1) {
+    result[i] = numbers[i] * 2;                     // <3>
+  }
+
+  return result;                                    // <4>
+}
 }
