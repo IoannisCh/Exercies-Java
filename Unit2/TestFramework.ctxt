@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=TestFramework
+comment0.text=\n\ Write\ a\ description\ of\ class\ TestFramework\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=result\ expected
+comment1.target=void\ testEqualDoubles(double,\ double)
+numComments=2

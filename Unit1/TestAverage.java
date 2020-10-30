@@ -19,6 +19,8 @@ public class TestAverage
     }
   }
 
+
+  
  public static void main (String[] args) {
 
   double[] numberList = {15, 32, 67, 44, 98};
