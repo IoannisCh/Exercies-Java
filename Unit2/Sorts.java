@@ -5,6 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
+
 public class Sorts {
 
     public static String arrayToString (int[] array) {
@@ -111,22 +112,4 @@ public class Sorts {
         selectionSort (numbers);
         System.out.println ("After: " + arrayToString(numbers));
     }
-    
-    public static int binarySearch (int[] numbers, int toFind){
-    int l = 0;
-    int r = numbers.length - 1;
-    
-    while (l <= r) {
-        int m = (1 + r)/2;
-        
-        if (toFind == numbers[m]) {
-            return m;
-        } else if (toFind < numbers[m]){
-            r = m - 1;
-        } else {
-            l = m+1;
-        }
-    }
-    return -1;
-}
 }

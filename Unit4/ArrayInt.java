@@ -32,6 +32,22 @@ public class ArrayInt
        this.currentSize = currentSize;
    }
    
+   public void set (int value, int index) {
+       if (index< 0 || index >= currentSize) {
+           System.out.println("Error in set: index is out of bounds");
+           return;
+       }
+       array[index] = value;
+   }
+   
+   public int get (int index){
+       if (index < 0 || index >= currentSize) {
+           System.out.println ("Error in get: index is out of bounds");
+           return -1;
+       }
+       return array[index];
+   }
+   
    public static void main (String[] args){
     ArrayInt arr1 = new ArrayInt (10,10);
     

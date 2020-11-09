@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=findNumber
+comment0.text=\n\ Write\ a\ description\ of\ class\ findNumber\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=numbers\ toFind
+comment1.target=int\ findNumber(int[],\ int)
+comment2.params=numbers
+comment2.target=void\ bubbleSort(int[])
+comment3.params=numbers\ i1\ i2
+comment3.target=void\ swap(int[],\ int,\ int)
+comment4.params=numbers
+comment4.target=void\ measureBubbleSort(int[])
+numComments=5
