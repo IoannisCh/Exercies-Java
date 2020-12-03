@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=TestNode
+comment0.text=\n\ Write\ a\ description\ of\ class\ TestNode\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=TestNode()
+comment2.params=node
+comment2.target=int\ sumTreeIntegers(Node)
+comment3.params=
+comment3.target=void\ testSumTree()
+comment4.params=
+comment4.target=void\ testDepthTree()
+numComments=5

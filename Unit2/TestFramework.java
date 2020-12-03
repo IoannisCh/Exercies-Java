@@ -31,24 +31,39 @@ public class TestFramework {
     }
   }
 
-    public  void testEqualIntArrays (int[] result, int[] expected){
-      boolean equalArrays = true;
+  public static void testEqualIntArrays (int[] result, int[] expected){
+      boolean equalArrays;
       
       if ( result.length == expected.length){
-          equalArrays = true;
-      } else {
           for (int i=0; i<result.length; i=i+1){
-              if (result[i] != expected[i]){
-               equalArrays = false;
+              if (result[i] == expected[i]){
+               equalArrays = true;
+               
+              } else {
+                  equalArrays = false;
+                  System.out.println("Element: " + result[i] + " Does not equal the expected: " + expected[i]);
+                  break;
               }
-          }
-      }
-      
-      if (!equalArrays){
+        }
+        System.out.println("The arrays are equal, bro !!");
+      } else {
           System.out.println ("Error: the result " + arrayToString(result) + " does not equal the expected " + arrayToString(expected));
-      }
+              }
   }
- 
   
- 
+  public static void main (String args []){
+      int[] emptyArray = {};
+      int[] oneArray = {1};
+      int[] duplicatedArray = {1, 2, 3, 2, 1, 3};
+      int[] variousArray = {1, 2, 3, 4, 5, 6};
+      
+      
+      testEqualIntArrays(emptyArray, emptyArray);
+      testEqualIntArrays(oneArray, variousArray);
+      testEqualIntArrays(duplicatedArray,duplicatedArray);
+      testEqualIntArrays(variousArray,variousArray);
+      
+      
+      
+  }
 }

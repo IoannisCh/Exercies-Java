@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Priceable
+comment0.text=\n\ Write\ a\ description\ of\ interface\ Priceable\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=int\ getPrice()
+numComments=2

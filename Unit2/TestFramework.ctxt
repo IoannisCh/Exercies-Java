@@ -7,4 +7,6 @@ comment2.params=result\ expected
 comment2.target=void\ testEqualDoubles(double,\ double)
 comment3.params=result\ expected
 comment3.target=void\ testEqualIntArrays(int[],\ int[])
-numComments=4
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5
