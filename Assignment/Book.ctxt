@@ -1,4 +1,8 @@
 #BlueJ class context
 comment0.target=Book
 comment0.text=\n\ Write\ a\ description\ of\ class\ Book\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
-numComments=1
+comment1.params=title\ id\ onLoan\ targetDate\ author
+comment1.target=Book(java.lang.String,\ int,\ boolean,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getAuthor()
+numComments=3

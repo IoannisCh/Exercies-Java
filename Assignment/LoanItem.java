@@ -1,6 +1,6 @@
 
 /**
- * Write a description of interface LoanItem here.
+ * Write a description of class LoanItem here.
  *
  * @author (your name)
  * @version (a version number or a date)

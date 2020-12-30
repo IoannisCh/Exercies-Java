@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=LoanItem
-comment0.text=\n\ Write\ a\ description\ of\ interface\ LoanItem\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ LoanItem\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=title\ id\ onLoan\ targetDate
 comment1.target=LoanItem(java.lang.String,\ int,\ boolean,\ java.lang.String)
 comment2.params=

@@ -7,27 +7,14 @@
  */
 public class Magazine extends LoanItem
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class Magazine
-     */
-    public Magazine()
-    {
-        // initialise instance variables
-        x = 0;
-    }
-
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    private String publisher;
+  
+  public Magazine (String title, int id, boolean onLoan, String targetDate, String publisher) {
+      super(title, id, onLoan, targetDate);
+      this.publisher = publisher;
+  }
+  
+  public String getPublisher (){
+      return publisher;
+  }
 }
