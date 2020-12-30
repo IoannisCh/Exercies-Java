@@ -5,7 +5,7 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class dvd extends LoanItem
+public class Dvd extends LoanItem
 {
     
 }
