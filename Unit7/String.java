@@ -10,6 +10,4 @@ public class String implements Comparable<String>
     public int compareTo(String anotherString){
         return 0;
     }
-    
-    
 }

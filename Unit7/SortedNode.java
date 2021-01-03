@@ -39,10 +39,10 @@ public class SortedNode<T extends Comparable<T>>
     public void prettyPrint (String insert){
         System.out.println (insert + "Node: " + key);
         if (leftChild != null){
-            leftChild.prettyPrint(insert+"L-");
+            leftChild.prettyPrint(insert + "L-");
         }
         if (rightChild != null){
-            rightChild.prettyPrint(insert+"R-");
+            rightChild.prettyPrint(insert + "R-");
         }
         
         
