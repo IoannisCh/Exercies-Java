@@ -1,14 +1,14 @@
-public class List<T> {
-    private ListNode<T> head;
+public class Lists {
+    private ListNodes head;
     private int count;
-    public List () {
+    public Lists () {
         head = null;
         count = 0;
     }
     
-    public void join (T data) {
+    public void join (LoanItem data) {
         if (head == null) {      
-            head = new ListNode<T> (null, data);
+            head = new ListNodes (null, data);
             return;              
         } else {
             head.join (data);
@@ -16,17 +16,17 @@ public class List<T> {
         }
     }
 
-    public T leave () {
+    public LoanItem leave () {
         if (head == null) {
             return null;
         } else {
-            T result = head.getData ();
+            LoanItem result = head.getData ();
             head = head.getNext ();
             return result;
         }
     }
 
-    public T get (int index) {
+    public LoanItem get (int index) {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
         } else {
@@ -34,7 +34,7 @@ public class List<T> {
         }
     }
 
-    public void set (T data, int index) {
+    public void set (LoanItem data, int index) {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
         } else {
@@ -42,7 +42,7 @@ public class List<T> {
         }
     }
 
-    public void insert (T data, int index) {  
+    public void insert (LoanItem data, int index) {  
         if (head == null) {
             join (data);
         } else {
@@ -74,7 +74,25 @@ public class List<T> {
         }
     }
     
-    
+    public static int binarySearch (String[] titles, String toFind) {
+        int l = 0;
+        int r = titles.length - 1;
+
+        while (l <= r) {
+            int m = (l + r)/2;  
+            
+            if (toFind.equals(titles[m])) {       
+            return m;
+            } else if (toFind.compaireTo (titles[m])) { 
+            r = m-1;
+            } else {  
+            l = m+1;
+            }
+        }
+
+  
+        return -1;
+}
     
     
     

@@ -1,17 +1,17 @@
 #BlueJ class context
-comment0.target=List
+comment0.target=Lists
 comment1.params=
-comment1.target=List()
+comment1.target=Lists()
 comment2.params=data
-comment2.target=void\ join(java.lang.Object)
+comment2.target=void\ join(LoanItem)
 comment3.params=
-comment3.target=java.lang.Object\ leave()
+comment3.target=LoanItem\ leave()
 comment4.params=index
-comment4.target=java.lang.Object\ get(int)
+comment4.target=LoanItem\ get(int)
 comment5.params=data\ index
-comment5.target=void\ set(java.lang.Object,\ int)
+comment5.target=void\ set(LoanItem,\ int)
 comment6.params=data\ index
-comment6.target=void\ insert(java.lang.Object,\ int)
+comment6.target=void\ insert(LoanItem,\ int)
 comment7.params=index
 comment7.target=void\ delete(int)
 comment8.params=
