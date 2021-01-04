@@ -1,20 +1,20 @@
 
 /**
- * Write a description of class Magazine here.
+ * Write a description of class b here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Magazine extends LoanItem
+public class Dvd extends LoanItem
 {
-  private String publisher;
+    private String publisher;
   
-  public Magazine (String title, int id, boolean onLoan, String targetDate, String publisher) {
+  public Dvd (String title, int id, boolean onLoan, String targetDate, String publisher) {
       super(title, id, onLoan, targetDate);
       this.publisher = publisher;
   }
   
   public String getPublisher (){
       return publisher;
-  }
+  }  
 }
