@@ -74,7 +74,7 @@ public class Lists {
         }
     }
     
-    public static int binarySearch (String[] titles, String toFind) {
+        /*public static int binarySearch (String[] titles, String toFind) {
         int l = 0;
         int r = titles.length - 1;
 
@@ -83,7 +83,7 @@ public class Lists {
             
             if (toFind.equals(titles[m])) {       
             return m;
-            } else if (toFind.compaireTo (titles[m])) { 
+            } else if (toFind.compareTo(titles[m])) { 
             r = m-1;
             } else {  
             l = m+1;
@@ -92,7 +92,7 @@ public class Lists {
 
   
         return -1;
-}
+    }*/
     
     
     

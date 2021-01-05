@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=LoanItem
-comment1.params=title\ id\ onLoan\ targetDate
-comment1.target=LoanItem(java.lang.String,\ int,\ boolean,\ java.lang.String)
+comment1.params=title\ id\ onLoan\ targetDate\ type
+comment1.target=LoanItem(java.lang.String,\ int,\ boolean,\ java.lang.String,\ java.lang.String)
 comment2.params=
 comment2.target=java.lang.String\ getTitle()
 comment3.params=
@@ -10,4 +10,6 @@ comment4.params=
 comment4.target=boolean\ getOnLoan()
 comment5.params=
 comment5.target=java.lang.String\ getTargetDate()
-numComments=6
+comment6.params=
+comment6.target=java.lang.String\ getType()
+numComments=7
