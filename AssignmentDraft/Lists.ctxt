@@ -2,6 +2,8 @@
 comment0.target=Lists
 comment1.params=
 comment1.target=Lists()
+comment10.params=a\ x
+comment10.target=int\ binarySearch(java.lang.String[],\ java.lang.String)
 comment2.params=data
 comment2.target=void\ join(LoanItem)
 comment3.params=
@@ -18,4 +20,4 @@ comment8.params=
 comment8.target=java.lang.String\ toString()
 comment9.params=
 comment9.target=int\ size()
-numComments=10
+numComments=11

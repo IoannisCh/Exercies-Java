@@ -54,8 +54,8 @@ public class Lists {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
         } else {
-            head = head.delete (index);
             count--;
+            head = head.delete (index);
         }
     }
 
@@ -75,25 +75,29 @@ public class Lists {
         }
     }
     
-        /*public static int binarySearch (String[] titles, String toFind) {
-        int l = 0;
-        int r = titles.length - 1;
+    public static int binarySearch(String[] a, String x) {
+        int low = 0;
+        int high = a.length - 1;
+        int mid;
+        
+        
+        while (low <= high) {
+            mid = (low + high) / 2;
 
-        while (l <= r) {
-            int m = (l + r)/2;  
-            
-            if (toFind.equals(titles[m])) {       
-            return m;
-            } else if (toFind.compareTo(titles[m])) { 
-            r = m-1;
-            } else {  
-            l = m+1;
+            if (a[mid].compareTo(x) > 0) {
+                low = mid + 1;
+                
+            } else if (a[mid].compareTo(x) < 0) {
+                high = mid - 1;
+                
+            } else {
+                return mid;
             }
         }
 
-  
         return -1;
-    }*/
+    }
+   
     
     
     
