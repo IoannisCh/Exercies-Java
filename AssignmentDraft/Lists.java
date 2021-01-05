@@ -55,6 +55,7 @@ public class Lists {
             throw new ArrayIndexOutOfBoundsException (index);
         } else {
             head = head.delete (index);
+            count--;
         }
     }
 

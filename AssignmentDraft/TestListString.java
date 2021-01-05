@@ -1,8 +1,6 @@
 public class TestListString 
 {
- 
-    public static void main (String[] args) 
-    {
+    public static Lists populateList(){
         Lists ls = new Lists ();
         Cd cd1 = new Cd ("Greatest Hits", 1, true, "020221", "Bon Acord", "cd");
         Cd cd2 = new Cd ("Iron Maiden", 19, true, "020221", "Iron Maiden", "cd");
@@ -45,8 +43,10 @@ public class TestListString
         ls.join(dvd4);
         ls.join(dvd5);
         
-        
-        
+        return ls;
+    }
+    
+    public static void printList(Lists ls){
         for (int i=0; i<=ls.size(); i++){
             if (ls.get(i).getOnLoan() == true){
                  System.out.println ("Item: " + ls.get(i).getId()+ ", "+ ls.get(i).getType() + ", " + ls.get(i).getTitle() + ", " + "yes" +", " + ls.get(i).getTargetDate());
@@ -55,6 +55,18 @@ public class TestListString
             }
             
         }
+    }
+    
+    public static void testAdd (String[] args) 
+    {
+        Lists ls = populateList();
+        printList(ls);
+    }
+    
+    public static void testDelete (String[] args){
+       Lists ls = populateList(); 
+       ls.delete(6);
+       printList(ls);
     }
     
     
