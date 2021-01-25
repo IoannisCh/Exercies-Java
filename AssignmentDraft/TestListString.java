@@ -62,7 +62,6 @@ public class TestListString
             } else {
                  System.out.println ("Item: " + ls.get(i).getId()+ ", "+ ls.get(i).getType() + ", " + ls.get(i).getTitle() + ", " + "no" +", " + ls.get(i).getTargetDate());
             }
-            
         }
         System.out.println(ls.size());
     }
@@ -78,10 +77,8 @@ public class TestListString
        Lists ls = populateList();
        printList(ls);
        String[] titles = getTitlesFromList(ls);
-       int index = ls.binarySearch(titles, "a");
+       int index = ls.binarySearch(titles, "Downey");
        ls.delete(index);
        printList(ls);
     }
-    
-    
 }

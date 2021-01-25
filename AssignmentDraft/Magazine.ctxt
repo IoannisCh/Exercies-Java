@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=Magazine
-comment0.text=\n\ Write\ a\ description\ of\ class\ d\ here.\n\n\ @author\ (your\ name)\n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=title\ id\ onLoan\ targetDate\ publisher\ type
 comment1.target=Magazine(java.lang.String,\ int,\ boolean,\ java.lang.String,\ java.lang.String,\ java.lang.String)
 comment2.params=

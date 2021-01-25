@@ -80,7 +80,6 @@ public class Lists {
         int high = a.length - 1;
         int mid;
         
-        
         while (low <= high) {
             mid = (low + high) / 2;
 
@@ -97,8 +96,4 @@ public class Lists {
 
         return -1;
     }
-   
-    
-    
-    
 }

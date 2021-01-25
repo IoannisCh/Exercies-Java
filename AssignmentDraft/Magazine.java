@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class d here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class Magazine extends LoanItem
 {
   private String publisher;

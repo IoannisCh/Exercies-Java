@@ -1,4 +1,3 @@
-
 public class LoanItem
 {
   private String title;
@@ -34,5 +33,4 @@ public class LoanItem
   public String getType() {
       return type;
   }
-  
 }
