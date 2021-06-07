@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=asteroids
+comment1.params=name\ id\ flag\ date\ type
+comment1.target=asteroids(java.lang.String,\ int,\ boolean,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+numComments=3

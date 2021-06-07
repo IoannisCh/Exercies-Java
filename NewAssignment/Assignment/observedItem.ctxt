@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=observedItem
+comment1.params=name\ id\ flag\ dateate\ type
+comment1.target=observedItem(java.lang.String,\ int,\ boolean,\ java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment3.params=
+comment3.target=int\ getId()
+comment4.params=
+comment4.target=boolean\ Flag()
+comment5.params=
+comment5.target=java.lang.String\ getDate()
+comment6.params=
+comment6.target=java.lang.String\ getType()
+numComments=7
