@@ -6,7 +6,7 @@ public class Lists {
         count = 0;
     }
     
-    public void join (LoanItem data) {
+    public void join (observedItem data) {
         if (head == null) {      
             head = new ListNodes (null, data);
             return;              
@@ -16,17 +16,17 @@ public class Lists {
         }
     }
 
-    public LoanItem leave () {
+    public observedItem leave () {
         if (head == null) {
             return null;
         } else {
-            LoanItem result = head.getData ();
+            observedItem result = head.getData ();
             head = head.getNext ();
             return result;
         }
     }
 
-    public LoanItem get (int index) {
+    public observedItem get (int index) {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
         } else {
@@ -34,7 +34,7 @@ public class Lists {
         }
     }
 
-    public void set (LoanItem data, int index) {
+    public void set (observedItem data, int index) {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
         } else {
@@ -42,7 +42,7 @@ public class Lists {
         }
     }
 
-    public void insert (LoanItem data, int index) {  
+    public void insert (observedItem data, int index) {  
         if (head == null) {
             join (data);
         } else {

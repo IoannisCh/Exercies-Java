@@ -1,8 +1,8 @@
 public class ListNodes {
     private ListNodes next;
-    private LoanItem data;
+    private observedItem data;
 
-    public ListNodes (ListNodes next, LoanItem data) {
+    public ListNodes (ListNodes next, observedItem data) {
         this.next = next;
         this.data = data;
     }
@@ -15,11 +15,11 @@ public class ListNodes {
         this.next = next;
     }
 
-    public LoanItem getData () {
+    public observedItem getData () {
         return data;
     }
 
-    public void join (LoanItem data) {
+    public void join (observedItem data) {
         ListNodes current = this;
 
         while (current.getNext () != null) {
@@ -29,7 +29,7 @@ public class ListNodes {
         current.setNext (new ListNodes (null, data));           
     }
 
-    public LoanItem get (int i) {
+    public observedItem get (int i) {
         ListNodes current = this;
         int currentIndex = 0;
 
@@ -44,7 +44,7 @@ public class ListNodes {
         throw new ArrayIndexOutOfBoundsException (i); // <1>
     }
 
-    public void set (LoanItem data, int i) {
+    public void set (observedItem data, int i) {
         ListNodes current = this;
         int currentIndex = 0;
 
@@ -60,7 +60,7 @@ public class ListNodes {
         throw new ArrayIndexOutOfBoundsException (i);
     }
 
-    public ListNodes insert (LoanItem data, int index) {
+    public ListNodes insert (observedItem data, int index) {
         ListNodes current = this;
         int currentIndex = 0;
         if (index < 0) { 
