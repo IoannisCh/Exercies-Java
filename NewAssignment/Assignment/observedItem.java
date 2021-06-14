@@ -4,14 +4,13 @@ public class observedItem
   private int id; //Club Reference Number
   private boolean flag;
   private String date;
-  private String type; //Kind of observed item
   
-  public observedItem (String name, int id, boolean flag, String dateate, String type){
+  
+  public observedItem (String name, int id, boolean flag, String date){
       this.name = name;
       this.id = id;
       this.flag = flag;
       this.date = date;
-      this.type = type;
   }
   
   public String getName () {
@@ -28,9 +27,5 @@ public class observedItem
   
   public String getDate () {
       return date;
-  }
-  
-  public String getType() {
-      return type;
   }
 }
