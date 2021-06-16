@@ -1,13 +1,13 @@
 public class asteroids extends observedItem
 {
-  private String name;
+  private String brightness;
   
-  public asteroids (String name, int id, boolean flag, String date) {
+  public asteroids (String name, int id, boolean flag, String date, String brightness) {
       super(name, id, flag, date);
-      this.name = name;
+      this.brightness = brightness;
   }
   
-  public String getName (){
-      return name;
+  public String brightness (){
+      return brightness;
   }
 }

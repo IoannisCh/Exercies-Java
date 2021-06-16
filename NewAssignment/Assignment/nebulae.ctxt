@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=nebulae
-comment1.params=name\ id\ flag\ date
-comment1.target=nebulae(java.lang.String,\ int,\ boolean,\ java.lang.String)
+comment1.params=name\ id\ flag\ date\ catalogue
+comment1.target=nebulae(java.lang.String,\ int,\ boolean,\ java.lang.String,\ java.lang.String)
 comment2.params=
-comment2.target=java.lang.String\ getName()
+comment2.target=java.lang.String\ catalogue()
 numComments=3

@@ -1,13 +1,13 @@
 public class galaxies extends observedItem
 {
-  private String name;
+  private String catalogue;
   
-  public galaxies (String name, int id, boolean flag, String date) {
+  public galaxies (String name, int id, boolean flag, String date, String catalogue) {
       super(name, id, flag, date);
-      this.name = name;
+      this.catalogue = catalogue;
   }
   
-  public String name (){
-      return name;
+  public String catalogue (){
+      return catalogue;
   }
 }

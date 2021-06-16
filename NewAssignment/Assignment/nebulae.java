@@ -1,13 +1,13 @@
 public class nebulae extends observedItem
 {
-  private String name;
+  private String catalogue;
   
-  public nebulae (String name, int id, boolean flag, String date) {
+  public nebulae (String name, int id, boolean flag, String date, String catalogue) {
       super(name, id, flag, date);
-      this.name = name;
+      this.catalogue = catalogue;
   }
   
-  public String getName (){
-      return name;
+  public String catalogue (){
+      return catalogue;
   }
 }
