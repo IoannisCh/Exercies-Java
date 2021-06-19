@@ -1,12 +1,12 @@
-public class observedItem
+public class ObservedItem
 {
-  private String name;
+  private String name;//
   private int id; //Club Reference Number
-  private boolean flag;
+  private boolean flag; //
   private String date;
   
   
-  public observedItem (String name, int id, boolean flag, String date){
+  public ObservedItem (String name, int id, boolean flag, String date){
       this.name = name;
       this.id = id;
       this.flag = flag;
@@ -21,7 +21,7 @@ public class observedItem
       return id;
   }
   
-  public boolean Flag (){
+  public boolean getFlag (){
       return flag;
   }
   

@@ -1,8 +1,8 @@
-public class galaxies extends observedItem
+public class Nebulae extends ObservedItem
 {
   private String catalogue;
   
-  public galaxies (String name, int id, boolean flag, String date, String catalogue) {
+  public Nebulae (String name, int id, boolean flag, String date, String catalogue) {
       super(name, id, flag, date);
       this.catalogue = catalogue;
   }

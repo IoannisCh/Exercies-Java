@@ -1,8 +1,8 @@
 public class ListNodes {
     private ListNodes next;
-    private observedItem data;
+    private ObservedItem data;
 
-    public ListNodes (ListNodes next, observedItem data) {
+    public ListNodes (ListNodes next, ObservedItem data) {
         this.next = next;
         this.data = data;
     }
@@ -15,11 +15,11 @@ public class ListNodes {
         this.next = next;
     }
 
-    public observedItem getData () {
+    public ObservedItem getData () {
         return data;
     }
 
-    public void join (observedItem data) {
+    public void join (ObservedItem data) {
         ListNodes current = this;
 
         while (current.getNext () != null) {
@@ -29,7 +29,7 @@ public class ListNodes {
         current.setNext (new ListNodes (null, data));           
     }
 
-    public observedItem get (int i) {
+    public ObservedItem get (int i) {
         ListNodes current = this;
         int currentIndex = 0;
 
@@ -44,7 +44,7 @@ public class ListNodes {
         throw new ArrayIndexOutOfBoundsException (i); // <1>
     }
 
-    public void set (observedItem data, int i) {
+    public void set (ObservedItem data, int i) {
         ListNodes current = this;
         int currentIndex = 0;
 
@@ -60,7 +60,7 @@ public class ListNodes {
         throw new ArrayIndexOutOfBoundsException (i);
     }
 
-    public ListNodes insert (observedItem data, int index) {
+    public ListNodes insert (ObservedItem data, int index) {
         ListNodes current = this;
         int currentIndex = 0;
         if (index < 0) { 
