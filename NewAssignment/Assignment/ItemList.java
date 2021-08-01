@@ -5,7 +5,7 @@ public class ItemList {
         head = null;
         count = 0;
     }
-    
+    //bellow the join support method
     public void join (ObservedItem data) {
         if (head == null) {      
             head = new ListNodes (null, data);
@@ -15,7 +15,7 @@ public class ItemList {
             count ++;
         }
     }
-
+    //bellow the leave support method
     public ObservedItem leave () {
         if (head == null) {
             return null;
@@ -25,7 +25,7 @@ public class ItemList {
             return result;
         }
     }
-
+    //bellow the get support method
     public ObservedItem get (int index) {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
@@ -33,7 +33,7 @@ public class ItemList {
             return head.get (index);
         }
     }
-
+    //bellow the set support method
     public void set (ObservedItem data, int index) {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
@@ -41,7 +41,9 @@ public class ItemList {
             head.set (data, index);
         }
     }
-
+    
+    //bellow the insert support method
+    
     public void insert (ObservedItem data, int index) {  
         if (head == null) {
             join (data);
@@ -49,7 +51,9 @@ public class ItemList {
             head = head.insert (data, index);
         }
     }
-
+    
+    //bellow the delete method
+    
     public void delete (int index) {
         if (head == null) {
             throw new ArrayIndexOutOfBoundsException (index);
@@ -58,7 +62,9 @@ public class ItemList {
             head = head.delete (index);
         }
     }
-
+    
+    //bellow the toString support method
+    
     public String toString () {
         if (head == null) {
             return "[]";
@@ -67,6 +73,8 @@ public class ItemList {
         }
     }
     
+    //bellow is the size support method
+    
     public int size (){
         if (head == null){
             return 0;
@@ -74,6 +82,8 @@ public class ItemList {
             return count;
         }
     }
+    
+    //bellow is the print method for task three
     
     public void print(){
         for (int i=0; i<=this.size(); i++){
@@ -86,17 +96,17 @@ public class ItemList {
         System.out.println(this.size());
     }
     
-    //
+    //bellow is the swap supporting function
     
     public void swap ( ObservedItem i1, ObservedItem i2, int index) {
           ObservedItem temp;
 
           temp = i1;
-          this.set(i2, index); //
-          this.set(temp, index+1); //
+          this.set(i2, index); 
+          this.set(temp, index+1); 
     }
     
-    //
+    //bellow is the sort method for task three
     
     public void sort(){
         boolean madeSwap; // flag to stop iteration                                     
@@ -105,12 +115,14 @@ public class ItemList {
             madeSwap = false;  //                               
             for (int i = 0; i < this.size(); i++) {  
                 if (this.get(i).getId() > this.get(i+1).getId()) {                  
-                    swap (this.get(i),this.get(i+1), i); //                      
+                    swap (this.get(i),this.get(i+1), i); // here the swap is made                    
                     madeSwap = true;                                
                 }
             }
         } while (madeSwap);                                 
     }
+    
+    //bellow is the search support method to the delete function for task five
     
     public int binarySearch(String[] a, String x) {
         int low = 0;
